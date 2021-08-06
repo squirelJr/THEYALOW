@@ -380,6 +380,11 @@ footer{
         display: none;
     }
 }
+@media only screen and (max-width:640px){
+    .minimal{
+        display: none;
+    }
+}
 
 @media only screen and (min-width:640px){
     header{
@@ -404,9 +409,11 @@ footer{
     }
     .logo{
         width: 30%;
-        height: 30%;
+        height: 60%;
         background-color: rgba(245, 245, 245, 0);
         border:0;
+        box-shadow: 0 0 0 0 ;
+        border: 0px;
        
     }
     .logo h1{
@@ -417,13 +424,13 @@ footer{
     
     .logo img{
         width: 36%;
-        height: 36%;
+        height: 100%;
     }
     
     .navbar{
         display: flex;
-        width: 30%;
-        height: 10%;
+        width: 35%;
+        height: 35%;
         background-color: #F0C106;
         padding: 0px;
         box-shadow: black 0px 1px;
@@ -436,9 +443,10 @@ footer{
         flex-direction: row;
        align-items: center;
        justify-content: center;
+
     }
     .navitems h2{
-        font-size:calc(1vw );
+        font-size:calc(1.2vw );
         text-align: center;
         color: #B99403;
     }
@@ -446,7 +454,7 @@ footer{
         width: 20%;
         height: 20%;
     }
-    
+
     .play{
         background-color: #e0d040e5;
         height: 5vw;
@@ -502,4 +510,72 @@ footer{
        height: 30%;
    
     }
+
+    .header{
+        width: 100%;
+        height: 10vw;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        padding: 0;
+        margin: 0;
+        
+
+
+    }
+    .playerlayer{
+        width: 100%;
+        height: 80%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        background-image: none;
+    }
+    .player{
+        width: 42%;
+        height: 80%;
+    }
+    .minimal{
+        display: flex;
+        flex-direction: column;
+        font-size: 5vw;
+        align-items: center;
+        justify-content: center;
+        width: 50%;
+        color: white;
+        text-transform: uppercase;
+        font-weight:200;
+        line-height: 7vw;
+    }
+
+    .cool{
+        color: #F0C106 ;
+    }
+
+    .layer2, .layer1{
+        background-color:rgba(255, 255, 255, 0);
+       
+    }
+    .layer1{
+        height: 20vw ;
+    }
+
+    .sec1{
+        padding: 0 15%;
+        height: 18vw;
+    }
+    .design {
+        width: 100%;
+        border-left: 0.5px rgba(71, 65, 65, 0.795) solid;
+        border-right: 0.5px rgba(71, 65, 65, 0.795) solid;
+    }
+    .customise, .free{
+        border-right: 0.5px rgba(71, 65, 65, 0.795) solid;
+        width: 100%;
+    }
 }
+
+
+  
