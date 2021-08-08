@@ -381,9 +381,10 @@ footer{
     }
 }
 @media only screen and (max-width:640px){
-    .minimal{
+    .minimal, #plusicon,#twenty-two,.calendar, .loremdesktop, .desktop-list{
         display: none;
     }
+    
 }
 
 @media only screen and (min-width:640px){
@@ -433,7 +434,6 @@ footer{
         height: 35%;
         background-color: #F0C106;
         padding: 0px;
-        box-shadow: black 0px 1px;
        
         
     }
@@ -575,7 +575,125 @@ footer{
         border-right: 0.5px rgba(71, 65, 65, 0.795) solid;
         width: 100%;
     }
+
+    .desktop-sec2{
+        display: flex;
+        flex-direction: row;
+        height: 40vw;
+        justify-content: space-around;
+        align-items: center;
+        background-image: url(./assets/desktop-sec2.svg);
+        background-size: cover;
+        align-content:center;
+    }
+    .tweeting{
+        display: none;
+    }
+    .tweeticon{
+        width: 100%;
+        height: 100%;
+        
+    }
+    .tweet{
+        width: 25%;
+        display: flex;
+        height: 50%;
+        
+    }
+    .sec2{
+        grid-column-gap: 0px;
+        width: 50%;
+        height: 100%;
+        grid-template-rows: 10% 50% 10%;
+        grid-row-gap: 0px;
+        align-content: center;
+        
+    }
+    .lorembox, .player2{
+        height: 100%;
+        width: 100%;
+        grid-row-start: 2;
+        grid-row-end: 2;
+    }
+    .lorem{
+        font-size: calc( 50% + 1.2vw);
+    }
+    
+    #plusicon{
+        justify-self: baseline;
+        align-self: flex-end;
+        width: 2vw;
+        height: 2vw;
+        margin: 0;
+        padding: 0px;
+    }
+    #twenty-two{
+        justify-self: flex-end;
+        align-self: flex-end;
+        width: 2vw;
+        height: 2vw;
+    }
+    
+    #plusicon:hover{
+        background-color: brown;
+    }
+
+    .calendar{
+        width: 5vw;
+        height: 5vw;
+        background-color: #F0C106;
+        align-self: center;
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+        justify-content: center;
+        grid-row-start: 3;
+        grid-row-end: 3;
+    }
+    .number{
+        width: 60%;
+        height: 60%;
+    }
+    .april{
+        width: 100%;
+        height: 100%;
+    }
+    .loremdesktop{
+        grid-column-start: 1;
+        grid-column-end: span 2;color: white;
+        margin-bottom: 5vw;
+        font-size: calc(1rem + 1vw);
+    }
+    .desktop-sec3{
+        display: flex;
+        justify-content: space-around;
+        flex-direction: row;
+    }
+    .desktop-list{
+        background-color: #474747;
+        color: white;
+       box-shadow: 0 0 0 0;
+       padding: 0px;
+       margin: 0px;
+       display: flex;
+       align-items: flex-start;
+       flex-direction: column;
+       justify-content: center;
+       padding-top: 2%;
+    }
+    .desktop-list li::marker{
+        color: yellow;
+        font-size: 5vw;
+    }
+
+    #footer{
+        border-top: black 1px solid;
+        box-shadow:0 0 10px 15px black;
+        
+    }
+   
 }
+
 
 
   
