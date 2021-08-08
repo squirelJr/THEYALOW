@@ -691,6 +691,10 @@ footer{
         box-shadow:0 0 10px 15px black;
         
     }
+    .desktop-sec3{
+        background-color: #474747;
+       box-shadow: 5px 5px 0 0  black;
+    }
    
 }
 
